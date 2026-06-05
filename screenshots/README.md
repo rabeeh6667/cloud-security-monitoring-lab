@@ -1,1 +1,3 @@
-<img width="957" height="495" alt="image" src="https://github.com/user-attachments/assets/8060be62-b9be-4471-acb5-2f4473eb0ef3" />
+01-ec2-running.png
+02-nginx-installed.png
+03-nginx-webpage.png
