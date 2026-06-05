@@ -28,8 +28,6 @@ Kali Linux → Ubuntu Target → Monitoring Platform
 
 ## Project Progress
 
-## Project Progress
-
 - [x] AWS Account Setup
 - [x] Ubuntu EC2 Deployment
 - [x] Nginx Installation
@@ -39,7 +37,7 @@ Kali Linux → Ubuntu Target → Monitoring Platform
 - [x] SSH Security Hardening Analysis
 - [x] SSH Brute Force Simulation
 - [x] Authentication Log Analysis
-- [ ] Fail2Ban Detection & Response
+- [x] Fail2Ban Detection & Response
 - [ ] Threat Detection Dashboard
 - [ ] Final Report
 
