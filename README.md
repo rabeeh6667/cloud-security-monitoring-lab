@@ -28,8 +28,6 @@ Kali Linux → Ubuntu Target → Monitoring Platform
 
 ## Project Progress
 
-## Project Progress
-
 * [x] AWS Account Setup
 * [x] Ubuntu EC2 Deployment
 * [x] Nginx Installation
