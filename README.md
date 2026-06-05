@@ -11,19 +11,29 @@ A hands-on cloud security project demonstrating threat detection, SIEM monitorin
 - Suricata IDS
 - Nginx
 
+## Skills Demonstrated
+
+- AWS EC2 Administration
+- Linux System Administration
+- Network Security
+- Threat Detection
+- Security Monitoring
+- Vulnerability Assessment
+- Incident Response
+- Cloud Security
+
 ## Architecture
 
-Kali Linux → Ubuntu Target → Wazuh SIEM Dashboard
+Kali Linux → Ubuntu Target → Monitoring Platform
 
 ## Project Progress
 
 - [x] AWS Account Setup
 - [x] Ubuntu EC2 Deployment
 - [x] Nginx Installation
-- [ ] Wazuh Deployment
-- [ ] Agent Configuration
 - [ ] Attack Simulation
 - [ ] Threat Detection Dashboard
+- [ ] Log Analysis
 
 ## Goal
 
