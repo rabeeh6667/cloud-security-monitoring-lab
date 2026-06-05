@@ -27,3 +27,15 @@
 09-Failed password entries in auth.log
 <img width="680" height="782" alt="image" src="https://github.com/user-attachments/assets/6fd4d103-ae37-4122-95b4-c7b6fb6b4ecf" />
 <img width="915" height="414" alt="Screenshot 2026-06-05 181019" src="https://github.com/user-attachments/assets/71b9d62a-0759-4d86-8a58-0f571f50ad2a" />
+
+10-Fail2Ban SSH Jail Status
+<img width="774" height="322" alt="image" src="https://github.com/user-attachments/assets/3fca087a-560a-4bb1-9c3c-6be91df714a5" />
+
+11-Hydra Brute Force Simulation
+<img width="673" height="257" alt="image" src="https://github.com/user-attachments/assets/a0f9d78e-c686-4d42-b3da-fb480b3baba0" />
+<img width="697" height="786" alt="image" src="https://github.com/user-attachments/assets/15d4e812-5be5-419e-a959-85059c2d6e12" />
+
+12-Fail2Ban Automated IP Ban
+<img width="666" height="285" alt="image" src="https://github.com/user-attachments/assets/6a90fd8e-51ff-41c7-9a9a-8efd9b44c8fa" />
+
+
