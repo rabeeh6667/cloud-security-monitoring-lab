@@ -86,6 +86,15 @@ Kali Linux → Ubuntu Target → Monitoring Platform
 - Hydra Brute Force Simulation
 - Authentication Log Analysis
 - Detection Evidence Collection
+
+### Scenario 3: Fail2Ban Detection & Automated Response
+
+- Fail2Ban Installation & Configuration
+- SSH Protection Jail Setup
+- Multiple Failed Login Attempt Simulation
+- Authentication Failure Detection
+- Automated IP Address Blocking
+- Incident Response Validation
   
 ## Goal
 
