@@ -65,6 +65,15 @@ Kali Linux → Ubuntu Target → Monitoring Platform
 - Identified Failed Login Attempts
 - Documented Detection Evidence
 
+## Milestone 4: Automated Threat Detection & Response
+
+- Installed Fail2Ban
+- Configured SSH Protection Jail
+- Generated SSH Brute Force Attempts
+- Detected Authentication Failures
+- Automatically Banned Attacking IP
+- Collected Detection Evidence
+
 ## Attack Scenarios
 
 ### Scenario 1: Nmap Reconnaissance & Traffic Analysis
