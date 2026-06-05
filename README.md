@@ -2,6 +2,12 @@
 
 A hands-on cloud security project demonstrating threat detection, SIEM monitoring, attack simulation, and incident response using AWS and open-source security tools.
 
+## Architecture Diagram
+
+This diagram illustrates the cloud security monitoring lab environment, including the attack workstation, target server, security controls, and log sources used for threat detection and analysis.
+
+![Architecture Diagram](architecture/cloud-security-lab-diagram.png)
+
 ## Technologies
 
 - AWS EC2
