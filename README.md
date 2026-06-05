@@ -56,7 +56,30 @@ Kali Linux → Ubuntu Target → Monitoring Platform
 * Performed Nmap Port Scanning
 * Enumerated Running Services
 * Captured and Analyzed Network Traffic using Wireshark
+  
+## Milestone 3: SSH Attack Detection & Log Analysis
 
+- Analyzed SSH Security Configuration
+- Enabled Password Authentication for Lab Testing
+- Created Dedicated Test User
+- Simulated SSH Brute Force Attack using Hydra
+- Monitored Authentication Logs
+- Identified Failed Login Attempts
+- Documented Detection Evidence
+
+## Attack Scenarios
+
+### Scenario 1: Nmap Reconnaissance & Traffic Analysis
+- Port Scanning
+- Service Enumeration
+- Wireshark Packet Analysis
+
+### Scenario 2: SSH Brute Force Detection
+- SSH Security Configuration Review
+- Hydra Brute Force Simulation
+- Authentication Log Analysis
+- Detection Evidence Collection
+  
 ## Goal
 
 Build a cloud-based Security Operations Center (SOC) lab capable of detecting and analyzing security threats in real time.
