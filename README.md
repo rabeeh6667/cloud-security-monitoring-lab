@@ -61,7 +61,7 @@ Kali Linux → Ubuntu Target → Monitoring Platform
 * Enumerated Running Services
 * Captured and Analyzed Network Traffic using Wireshark
   
-## Milestone 3: SSH Attack Detection & Log Analysis
+### Milestone 3: SSH Attack Detection & Log Analysis
 
 - Analyzed SSH Security Configuration
 - Enabled Password Authentication for Lab Testing
@@ -71,7 +71,7 @@ Kali Linux → Ubuntu Target → Monitoring Platform
 - Identified Failed Login Attempts
 - Documented Detection Evidence
 
-## Milestone 4: Automated Threat Detection & Response
+### Milestone 4: Automated Threat Detection & Response
 
 - Installed Fail2Ban
 - Configured SSH Protection Jail
