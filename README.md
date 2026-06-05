@@ -28,12 +28,18 @@ Kali Linux → Ubuntu Target → Monitoring Platform
 
 ## Project Progress
 
-- [x] AWS Account Setup
-- [x] Ubuntu EC2 Deployment
-- [x] Nginx Installation
-- [ ] Attack Simulation
-- [ ] Threat Detection Dashboard
-- [ ] Log Analysis
+## Project Progress
+
+* [x] AWS Account Setup
+* [x] Ubuntu EC2 Deployment
+* [x] Nginx Installation
+* [x] Nmap Reconnaissance
+* [x] Service Enumeration
+* [x] Wireshark Traffic Analysis
+* [ ] SSH Brute Force Simulation
+* [ ] Log Analysis
+* [ ] Threat Detection Dashboard
+* [ ] Final Report
 
 ## Goal
 
