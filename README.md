@@ -44,7 +44,7 @@ Kali Linux → Ubuntu Target → Monitoring Platform
 - [x] SSH Brute Force Simulation
 - [x] Authentication Log Analysis
 - [x] Fail2Ban Detection & Response
-- [ ] Threat Detection Dashboard
+- [ ] Threat Detection Dashboard (Planned - Wazuh SIEM Integration)
 - [ ] Final Report
 
 ## Completed Milestones
@@ -101,6 +101,13 @@ Kali Linux → Ubuntu Target → Monitoring Platform
 - Authentication Failure Detection
 - Automated IP Address Blocking
 - Incident Response Validation
+  
+## Future Enhancements
+
+- Deploy Wazuh SIEM for centralized log monitoring
+- Build a real-time threat detection dashboard
+- Integrate agent-based security monitoring
+- Add alert correlation and incident visualization
   
 ## Goal
 
