@@ -4,7 +4,7 @@
 
 The attack workstation is a Kali Linux machine used to perform reconnaissance, traffic analysis, and attack simulations.
 
-Tools:
+Tools used:
 - Nmap
 - Hydra
 - Wireshark
