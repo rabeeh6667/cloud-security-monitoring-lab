@@ -34,6 +34,15 @@ This directory contains evidence collected during the Cloud Security Monitoring 
 | 11-hydra-bruteforce-attack.png | Repeated SSH brute-force attack simulation               |
 | 12-fail2ban-automatic-ban.png  | Automatic IP blocking by Fail2Ban after attack detection |
 
+## Security Monitoring Dashboard
+
+| Screenshot                           | Description                                                   |
+| ------------------------------------ | ------------------------------------------------------------- |
+| 13-monitoring-server-preparation.png | Dedicated monitoring server prepared for dashboard deployment |
+| 14-grafana-service-running.png       | Grafana service successfully installed and running            |
+| 15-grafana-login-screen.png          | Grafana web interface login page                              |
+| 16-grafana-home-dashboard.png        | Grafana dashboard successfully deployed and accessible        |
+
 ## Architecture
 
 The project architecture diagram is located in:
@@ -42,12 +51,27 @@ The project architecture diagram is located in:
 architecture/cloud-security-lab-diagram.png
 ```
 
-## Future Enhancements
+## Upcoming Dashboard Evidence
 
-Planned future screenshots:
+Planned screenshots for Version 2 completion:
 
-* Wazuh Dashboard Overview
-* Security Alerts Dashboard
-* SSH Authentication Alerts
+* SSH Failed Login Dashboard
+* Fail2Ban Events Dashboard
+* Nginx Access Monitoring Dashboard
+* Security Overview Dashboard
+* Loki Data Source Configuration
+* Centralized Log Monitoring Dashboard
 * Threat Detection Visualizations
 
+## Evidence Collection Purpose
+
+The screenshots in this directory provide visual evidence of:
+
+* Cloud infrastructure deployment
+* Network reconnaissance activities
+* Traffic analysis procedures
+* SSH attack simulation
+* Authentication log analysis
+* Automated threat detection
+* Incident response actions
+* Security monitoring dashboard deployment
