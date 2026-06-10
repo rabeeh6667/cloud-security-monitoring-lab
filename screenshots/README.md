@@ -43,6 +43,7 @@ This directory contains evidence collected during the Cloud Security Monitoring 
 | 15-grafana-login-screen.png          | Grafana web interface login page                              |
 | 16-grafana-home-dashboard.png        | Grafana dashboard successfully deployed and accessible        |
 | 17-loki-installation.png | Loki log aggregation service successfully installed |
+| 18-node-exporter-metrics.png | Node Exporter metrics endpoint successfully collecting system metrics |
 
 ## Architecture
 
