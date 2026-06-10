@@ -20,19 +20,20 @@ Version 1 focuses on cloud infrastructure deployment, attack simulation, securit
 * Fail2Ban Automated Response
 * Security Documentation & Reporting
 
-### Version 2.0 (Planned)
+### Version 2.0 (In Progress)
 
-Version 2 will extend the lab into a SOC-style monitoring environment using Wazuh SIEM.
+Version 2 extends the lab into a SOC-style monitoring environment using Grafana and Loki for centralized log monitoring and threat visualization.
 
 **Planned Components**
 
-* Wazuh Manager
-* Wazuh Dashboard
-* Wazuh Agent Integration
-* Centralized Log Collection
+* Grafana Dashboard
+* Loki Log Aggregation
+* Promtail Log Collection
+* SSH Authentication Monitoring
+* Fail2Ban Event Monitoring
+* Security Event Visualization
 * Threat Detection Dashboard
-* Security Alert Correlation
-* Incident Monitoring & Visualization
+* Security Analytics & Reporting
 
 ---
 
@@ -63,7 +64,9 @@ This diagram illustrates the cloud security monitoring lab environment, includin
 
 ### Planned Technologies (Version 2)
 
-* Wazuh SIEM
+* Grafana
+* Loki
+* Promtail
 * Threat Detection Dashboard
 
 ---
@@ -93,7 +96,13 @@ AWS Ubuntu Target Server
 (Nginx + OpenSSH + Fail2Ban)
         │
         ▼
-Authentication Logs & Security Events
+Authentication Logs & Nginx Logs
+        │
+        ▼
+Loki
+        │
+        ▼
+Grafana Dashboard
 ```
 
 ---
@@ -116,12 +125,13 @@ Authentication Logs & Security Events
 
 ### Version 2.0
 
-* [ ] Wazuh SIEM Deployment
-* [ ] Wazuh Agent Installation
+* [ ] Grafana Installation
+* [ ] Loki Installation
+* [ ] Promtail Configuration
 * [ ] Centralized Log Collection
 * [ ] Threat Detection Dashboard
-* [ ] Security Alert Correlation
-* [ ] SOC-Style Monitoring
+* [ ] Security Event Visualization
+* [ ] Security Monitoring Analytics
 
 ---
 
@@ -188,16 +198,17 @@ Authentication Logs & Security Events
 
 ## Future Enhancements (Version 2)
 
-* Deploy Wazuh SIEM
-* Build a Threat Detection Dashboard
-* Centralized Log Monitoring
-* Security Alert Correlation
-* Agent-Based Monitoring
-* Security Event Visualization
-* SOC-Style Monitoring Environment
+* Deploy Grafana Dashboard
+* Deploy Loki Log Aggregation
+* Configure Promtail Log Collection
+* Build SSH Authentication Dashboard
+* Build Fail2Ban Monitoring Dashboard
+* Build Security Event Overview Dashboard
+* Implement Real-Time Threat Monitoring
+* Expand into a SOC-Style Monitoring Environment
 
 ---
 
 ## Goal
 
-Build a cloud-based Security Operations Center (SOC) lab capable of detecting, monitoring, and responding to security threats in real time.
+Build a cloud-based Security Operations Center (SOC) lab capable of detecting, monitoring, visualizing, and responding to security threats in real time.
