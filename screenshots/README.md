@@ -42,6 +42,7 @@ This directory contains evidence collected during the Cloud Security Monitoring 
 | 14-grafana-service-running.png       | Grafana service successfully installed and running            |
 | 15-grafana-login-screen.png          | Grafana web interface login page                              |
 | 16-grafana-home-dashboard.png        | Grafana dashboard successfully deployed and accessible        |
+| 17-loki-installation.png | Loki log aggregation service successfully installed |
 
 ## Architecture
 
@@ -75,3 +76,5 @@ The screenshots in this directory provide visual evidence of:
 * Automated threat detection
 * Incident response actions
 * Security monitoring dashboard deployment
+
+  | 17-loki-installation.png | Loki log aggregation service successfully installed |
