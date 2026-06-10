@@ -6,7 +6,7 @@ A hands-on cloud security project demonstrating attack simulation, threat detect
 
 ### Version 1.0 (Completed)
 
-Version 1 focuses on cloud infrastructure deployment, attack simulation, security monitoring, and automated incident response.
+Version 1 focuses on cloud infrastructure deployment, attack simulation, security monitoring, and automated incident response
 
 **Implemented Components**
 
