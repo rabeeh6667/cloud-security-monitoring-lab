@@ -83,6 +83,7 @@ This diagram illustrates the cloud security monitoring lab environment, includin
 * Cloud Security
 * Security Log Analysis
 * Security Operations Fundamentals
+* Dashboard Deployment & Monitoring
 
 ---
 
@@ -125,13 +126,15 @@ Grafana Dashboard
 
 ### Version 2.0
 
-* [ ] Grafana Installation
+* [x] Monitoring Server Deployment
+* [x] Grafana Installation
+* [x] Grafana Dashboard Access
 * [ ] Loki Installation
 * [ ] Promtail Configuration
 * [ ] Centralized Log Collection
 * [ ] Threat Detection Dashboard
 * [ ] Security Event Visualization
-* [ ] Security Monitoring Analytics
+* [ ] Security Monitoring Analyticss
 
 ---
 
@@ -167,6 +170,14 @@ Grafana Dashboard
 * Detected Authentication Failures
 * Automatically Banned Attacking IP
 * Collected Detection Evidence
+
+### Milestone 5: Security Monitoring Dashboard
+
+- Deployed Dedicated Monitoring Server
+- Installed Grafana
+- Configured Dashboard Access
+- Prepared Centralized Monitoring Platform
+- Verified Dashboard Availability
 
 ---
 
