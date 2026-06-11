@@ -2,13 +2,11 @@
 
 A hands-on cloud security project demonstrating attack simulation, threat detection, log analysis, security monitoring, and automated incident response using AWS and open-source security tools.
 
----
-
 ## Project Status
 
 ### Version 1.0 (Completed)
 
-Version 1 focuses on cloud infrastructure deployment, attack simulation, security monitoring, and automated incident response.
+Version 1 focused on cloud infrastructure deployment, attack simulation, security monitoring, and automated incident response.
 
 **Implemented Components**
 
@@ -24,7 +22,7 @@ Version 1 focuses on cloud infrastructure deployment, attack simulation, securit
 
 ### Version 2.0 (Completed)
 
-Version 2 extends the lab into a SOC-style monitoring environment using Grafana, Prometheus, and Node Exporter for infrastructure monitoring and security visibility.
+Version 2 extended the lab into a SOC-style monitoring environment using Grafana, Prometheus, and Node Exporter.
 
 **Implemented Components**
 
@@ -34,14 +32,11 @@ Version 2 extends the lab into a SOC-style monitoring environment using Grafana,
 * Node Exporter Metrics Collection
 * Real-Time Infrastructure Monitoring
 * Security Monitoring Dashboard
-* System Health Visualization
-* Dashboard-Based Monitoring & Reporting
+* Dashboard-Based Reporting & Visualization
 
 ---
 
 ## Architecture Diagram
-
-This diagram illustrates the cloud security monitoring lab environment, including the attack workstation, target server, security controls, log sources, and monitoring platform used for threat detection and analysis.
 
 ![Architecture Diagram](architecture/cloud-security-lab-diagram.png)
 
@@ -86,7 +81,6 @@ This diagram illustrates the cloud security monitoring lab environment, includin
 * Security Operations Fundamentals
 * Dashboard Deployment & Monitoring
 * Infrastructure Monitoring
-* Monitoring Platform Administration
 
 ---
 
@@ -99,9 +93,8 @@ Kali Linux (Attack Workstation)
 AWS Ubuntu Target Server
 (Nginx + OpenSSH + Fail2Ban)
         │
-        ├──────────────► Authentication Logs
-        │
-        ├──────────────► Nginx Access Logs
+        ▼
+Authentication & System Logs
         │
         ▼
 Monitoring Server
@@ -131,7 +124,7 @@ Security Monitoring & Visualization
 * [x] Authentication Log Analysis
 * [x] Fail2Ban Detection & Response
 
-### Version 2.0
+### Version 2.0 (Completed - Monitoring Dashboard)
 
 * [x] Monitoring Server Deployment
 * [x] Grafana Installation
@@ -220,14 +213,14 @@ Security Monitoring & Visualization
 
 The Grafana dashboard provides:
 
-* CPU Utilization Monitoring
-* Memory Utilization Monitoring
+* CPU Monitoring
+* Memory Monitoring
 * Disk Usage Monitoring
 * Network Traffic Monitoring
 * System Load Monitoring
 * Infrastructure Health Visibility
 
-Monitoring data is collected through Node Exporter and stored in Prometheus before being visualized in Grafana.
+Monitoring data is collected through Node Exporter and Prometheus before being visualized in Grafana.
 
 ---
 
@@ -238,9 +231,8 @@ architecture/
 attack-scenarios/
 aws/
 docs/
-screenshots/
-wazuh/
 grafana/
+screenshots/
 README.md
 ```
 
@@ -249,12 +241,10 @@ README.md
 ## Future Enhancements
 
 * Centralized Log Collection
-* SSH Authentication Dashboard
-* Fail2Ban Event Dashboard
 * Security Alert Correlation
-* SIEM Integration
 * Real-Time Security Alerting
 * Security Event Analytics
+* SIEM Integration
 * Wazuh Deployment
 
 ---
