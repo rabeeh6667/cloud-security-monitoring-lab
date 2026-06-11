@@ -4,144 +4,160 @@
 
 This directory contains supporting documentation for the Cloud Security Monitoring & Threat Detection Lab.
 
-The documentation provides detailed information about the project architecture, attack simulations, security controls, findings, and future enhancements.
+The documentation provides details about infrastructure deployment, attack simulations, monitoring implementation, incident response activities, and lessons learned throughout the project.
+
+---
 
 ## Documentation Structure
 
 ### Architecture Documentation
 
-Provides an overview of the lab design, components, security controls, and data flow.
+Purpose:
 
-**Related Folder**
+* Explain the project architecture
+* Describe system components
+* Illustrate data flow and monitoring workflow
 
-* `architecture/`
+Location:
+
+```text id="m2o57v"
+../architecture/
+```
 
 ---
 
-### AWS Infrastructure Documentation
+### AWS Deployment Documentation
 
-Documents the cloud infrastructure deployed in Amazon Web Services (AWS).
+Purpose:
 
-**Related Folder**
+* Document cloud infrastructure deployment
+* Describe EC2 configuration
+* Explain security group configuration
+* Detail monitoring server deployment
 
-* `aws/`
+Location:
+
+```text id="o74x3z"
+../aws/
+```
 
 ---
 
 ### Attack Scenario Documentation
 
-Contains detailed reports for each attack simulation conducted during the project.
+Purpose:
 
-**Related Folder**
+* Document attack simulations
+* Describe detection methodologies
+* Explain incident response procedures
 
-* `attack-scenarios/`
+Location:
 
-**Included Scenarios**
-
-1. Nmap Reconnaissance & Traffic Analysis
-2. SSH Brute Force Detection
-3. Fail2Ban Detection & Automated Response
-
----
-
-### Screenshot Evidence
-
-Contains screenshots collected during deployment, testing, detection, and response activities.
-
-**Related Folder**
-
-* `screenshots/`
+```text id="40u5hr"
+../attack-scenarios/
+```
 
 ---
 
-### Wazuh SIEM Documentation
+### Monitoring Documentation
 
-Documents the planned integration of a centralized security monitoring platform.
+Purpose:
 
-**Related Folder**
+* Document Grafana deployment
+* Describe Prometheus monitoring
+* Explain Node Exporter integration
+* Detail dashboard configuration
 
-* `wazuh/`
+Location:
 
----
-
-## Project Objectives
-
-* Deploy a cloud-hosted security lab
-* Simulate realistic cyber attacks
-* Analyze network traffic
-* Detect malicious activity
-* Implement automated response mechanisms
-* Document security findings
+```text id="8bpk35"
+../grafana/
+```
 
 ---
 
-## Security Technologies Used
+### Screenshots & Evidence
 
-### Cloud Platform
+Purpose:
 
-* AWS EC2
+* Provide deployment evidence
+* Document attack simulations
+* Demonstrate monitoring capabilities
+* Support project findings
 
-### Operating Systems
+Location:
 
-* Ubuntu Server
-* Kali Linux
-
-### Security Tools
-
-* Nmap
-* Wireshark
-* Hydra
-* OpenSSH
-* Fail2Ban
-
-### Planned Technologies
-
-* Wazuh SIEM
-* Threat Detection Dashboard
+```text id="w8j25t"
+../screenshots/
+```
 
 ---
 
-## Completed Milestones
+## Key Project Areas
 
-### Milestone 1: Cloud Infrastructure Setup
+### Cloud Infrastructure
 
 * AWS EC2 Deployment
-* Ubuntu Server Configuration
-* Nginx Installation
+* Ubuntu Server Administration
+* Security Group Configuration
 
-### Milestone 2: Reconnaissance & Traffic Analysis
+### Security Operations
 
-* Nmap Scanning
+* Threat Detection
+* Security Monitoring
+* Authentication Analysis
+* Incident Response
+
+### Attack Simulation
+
+* Nmap Reconnaissance
 * Service Enumeration
-* Wireshark Analysis
+* SSH Brute Force Simulation
 
-### Milestone 3: SSH Attack Detection & Log Analysis
+### Automated Defense
 
-* SSH Security Testing
-* Hydra Attack Simulation
-* Authentication Log Analysis
-
-### Milestone 4: Automated Threat Detection & Response
-
-* Fail2Ban Deployment
-* Attack Detection
+* Fail2Ban Protection
 * Automated IP Blocking
+* Threat Response Validation
+
+### Monitoring & Visualization
+
+* Grafana Dashboards
+* Prometheus Monitoring
+* Node Exporter Metrics Collection
+
+---
+
+## Project Outcomes
+
+The project successfully demonstrated:
+
+* Cloud infrastructure deployment
+* Security monitoring implementation
+* Attack simulation techniques
+* Threat detection workflows
+* Automated incident response
+* Dashboard-based monitoring and visualization
 
 ---
 
 ## Future Enhancements
 
-* Wazuh SIEM Integration
-* Threat Detection Dashboard
-* Centralized Log Monitoring
-* Alert Correlation
-* SOC-Style Monitoring Environment
+* Wazuh SIEM Deployment
+* Centralized Log Collection
+* Security Alert Correlation
+* Real-Time Alerting
+* Multi-Host Monitoring
+* SOC-Style Security Operations
 
 ---
 
-## Project Outcome
+## Related Documentation
 
-This project demonstrates practical cloud security monitoring concepts through attack simulation, detection, analysis, and automated response in a controlled AWS environment.
-
-The lab provides hands-on experience with cloud security operations, incident detection, and defensive security technologies.
-
+```text id="rkhz0q"
+architecture/
+aws/
+attack-scenarios/
+grafana/
+screenshots/
+```
