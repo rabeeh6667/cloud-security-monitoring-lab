@@ -1,12 +1,14 @@
 # Cloud Security Monitoring & Threat Detection Lab
 
-A hands-on cloud security project demonstrating attack simulation, threat detection, log analysis, and automated incident response using AWS and open-source security tools.
+A hands-on cloud security project demonstrating attack simulation, threat detection, log analysis, security monitoring, and automated incident response using AWS and open-source security tools.
+
+---
 
 ## Project Status
 
 ### Version 1.0 (Completed)
 
-Version 1 focuses on cloud infrastructure deployment, attack simulation, security monitoring, and automated incident response
+Version 1 focuses on cloud infrastructure deployment, attack simulation, security monitoring, and automated incident response.
 
 **Implemented Components**
 
@@ -20,32 +22,32 @@ Version 1 focuses on cloud infrastructure deployment, attack simulation, securit
 * Fail2Ban Automated Response
 * Security Documentation & Reporting
 
-### Version 2.0 (In Progress)
+### Version 2.0 (Completed)
 
-Version 2 extends the lab into a SOC-style monitoring environment using Grafana and Loki for centralized log monitoring and threat visualization.
+Version 2 extends the lab into a SOC-style monitoring environment using Grafana, Prometheus, and Node Exporter for infrastructure monitoring and security visibility.
 
-**Planned Components**
+**Implemented Components**
 
+* Dedicated Monitoring Server
 * Grafana Dashboard
-* Loki Log Aggregation
-* Promtail Log Collection
-* SSH Authentication Monitoring
-* Fail2Ban Event Monitoring
-* Security Event Visualization
-* Threat Detection Dashboard
-* Security Analytics & Reporting
+* Prometheus Monitoring
+* Node Exporter Metrics Collection
+* Real-Time Infrastructure Monitoring
+* Security Monitoring Dashboard
+* System Health Visualization
+* Dashboard-Based Monitoring & Reporting
 
 ---
 
 ## Architecture Diagram
 
-This diagram illustrates the cloud security monitoring lab environment, including the attack workstation, target server, security controls, and log sources used for threat detection and analysis.
+This diagram illustrates the cloud security monitoring lab environment, including the attack workstation, target server, security controls, log sources, and monitoring platform used for threat detection and analysis.
 
 ![Architecture Diagram](architecture/cloud-security-lab-diagram.png)
 
 ---
 
-## Technologies Used (Version 1)
+## Technologies Used
 
 ### Cloud & Infrastructure
 
@@ -53,7 +55,7 @@ This diagram illustrates the cloud security monitoring lab environment, includin
 * Ubuntu Server
 * Kali Linux
 
-### Security & Monitoring
+### Security Tools
 
 * Nmap
 * Wireshark
@@ -62,12 +64,11 @@ This diagram illustrates the cloud security monitoring lab environment, includin
 * Fail2Ban
 * Nginx
 
-### Planned Technologies (Version 2)
+### Monitoring & Visualization
 
 * Grafana
-* Loki
-* Promtail
-* Threat Detection Dashboard
+* Prometheus
+* Node Exporter
 
 ---
 
@@ -81,29 +82,36 @@ This diagram illustrates the cloud security monitoring lab environment, includin
 * Vulnerability Assessment
 * Incident Response
 * Cloud Security
-* Security Log Analysis
+* Authentication Log Analysis
 * Security Operations Fundamentals
 * Dashboard Deployment & Monitoring
+* Infrastructure Monitoring
+* Monitoring Platform Administration
 
 ---
 
 ## Architecture
 
 ```text
-Kali Linux (Attacker)
+Kali Linux (Attack Workstation)
         │
         ▼
 AWS Ubuntu Target Server
 (Nginx + OpenSSH + Fail2Ban)
         │
-        ▼
-Authentication Logs & Nginx Logs
+        ├──────────────► Authentication Logs
+        │
+        ├──────────────► Nginx Access Logs
         │
         ▼
-Loki
+Monitoring Server
+(Prometheus + Node Exporter)
         │
         ▼
 Grafana Dashboard
+        │
+        ▼
+Security Monitoring & Visualization
 ```
 
 ---
@@ -122,19 +130,17 @@ Grafana Dashboard
 * [x] SSH Brute Force Simulation
 * [x] Authentication Log Analysis
 * [x] Fail2Ban Detection & Response
-* [x] Final Report
 
 ### Version 2.0
 
 * [x] Monitoring Server Deployment
 * [x] Grafana Installation
-* [x] Grafana Dashboard Access
-* [ ] Loki Installation
-* [ ] Promtail Configuration
-* [ ] Centralized Log Collection
-* [ ] Threat Detection Dashboard
-* [ ] Security Event Visualization
-* [ ] Security Monitoring Analyticss
+* [x] Prometheus Installation
+* [x] Node Exporter Installation
+* [x] Prometheus Data Source Configuration
+* [x] Grafana Dashboard Deployment
+* [x] Infrastructure Monitoring Dashboard
+* [x] Security Monitoring Visualization
 
 ---
 
@@ -173,11 +179,14 @@ Grafana Dashboard
 
 ### Milestone 5: Security Monitoring Dashboard
 
-- Deployed Dedicated Monitoring Server
-- Installed Grafana
-- Configured Dashboard Access
-- Prepared Centralized Monitoring Platform
-- Verified Dashboard Availability
+* Deployed Dedicated Monitoring Server
+* Installed Grafana
+* Installed Prometheus
+* Installed Node Exporter
+* Configured Prometheus Data Source
+* Imported Monitoring Dashboard
+* Visualized Real-Time Infrastructure Metrics
+* Built Security Monitoring Dashboard
 
 ---
 
@@ -207,16 +216,45 @@ Grafana Dashboard
 
 ---
 
-## Future Enhancements (Version 2)
+## Monitoring Dashboard
 
-* Deploy Grafana Dashboard
-* Deploy Loki Log Aggregation
-* Configure Promtail Log Collection
-* Build SSH Authentication Dashboard
-* Build Fail2Ban Monitoring Dashboard
-* Build Security Event Overview Dashboard
-* Implement Real-Time Threat Monitoring
-* Expand into a SOC-Style Monitoring Environment
+The Grafana dashboard provides:
+
+* CPU Utilization Monitoring
+* Memory Utilization Monitoring
+* Disk Usage Monitoring
+* Network Traffic Monitoring
+* System Load Monitoring
+* Infrastructure Health Visibility
+
+Monitoring data is collected through Node Exporter and stored in Prometheus before being visualized in Grafana.
+
+---
+
+## Repository Structure
+
+```text
+architecture/
+attack-scenarios/
+aws/
+docs/
+screenshots/
+wazuh/
+README.md
+```
+
+---
+
+## Future Enhancements
+
+* Centralized Log Collection
+* SSH Authentication Dashboard
+* Fail2Ban Event Dashboard
+* Security Alert Correlation
+* SIEM Integration
+* Real-Time Security Alerting
+* Security Event Analytics
+* Wazuh Deployment
 
 ---
 
