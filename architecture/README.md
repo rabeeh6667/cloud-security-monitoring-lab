@@ -1,131 +1,165 @@
-# Architecture Documentation
+# Architecture
 
 ## Overview
 
-This directory contains the architecture design and visual documentation for the Cloud Security Monitoring & Threat Detection Lab.
+The Cloud Security Monitoring & Threat Detection Lab consists of an attack workstation, a target server, and a dedicated monitoring platform.
 
-The architecture demonstrates a cloud-based cybersecurity monitoring environment that simulates real-world attack scenarios, threat detection, and automated incident response.
+The environment simulates common security operations activities including reconnaissance, attack simulation, threat detection, incident response, and infrastructure monitoring.
+
+---
 
 ## Architecture Diagram
 
-![Architecture Diagram](cloud-security-lab-diagram.png)
+The architecture diagram is located in:
 
-## Lab Components
+```text
+cloud-security-lab-diagram.png
+```
 
-### Attack Workstation
+---
 
-**Operating System**
+## Architecture Components
 
-* Kali Linux
+### Kali Linux Attack Workstation
 
-**Security Tools**
+Purpose:
+
+* Security Testing
+* Reconnaissance
+* Attack Simulation
+
+Tools:
 
 * Nmap
 * Hydra
 * Wireshark
 
-**Purpose**
-
-* Network reconnaissance
-* Service enumeration
-* SSH brute-force simulation
-* Traffic capture and analysis
-
 ---
 
-### Target Server
+### AWS Ubuntu Target Server
 
-**Platform**
+Purpose:
 
-* AWS EC2 Ubuntu Server
+* Attack Target
+* Service Hosting
+* Security Monitoring
 
-**Services**
+Services:
 
 * Nginx Web Server
 * OpenSSH
-
-**Security Controls**
-
 * Fail2Ban
 
-**Purpose**
+Functions:
 
-* Host vulnerable services for testing
-* Generate security logs
-* Demonstrate attack detection and response
-
----
-
-### Log Sources
-
-#### Authentication Logs
-
-* SSH login attempts
-* Successful authentications
-* Failed authentication events
-
-#### Web Server Logs
-
-* Nginx access logs
-* Nginx error logs
-
-#### System Logs
-
-* Service status events
-* Security-related activities
+* Service Enumeration
+* Authentication Monitoring
+* Automated Threat Response
 
 ---
 
-## Attack Scenarios
+### Monitoring Server
 
-### Scenario 1: Nmap Reconnaissance & Traffic Analysis
+Purpose:
 
-* Port scanning
-* Service enumeration
-* Packet capture with Wireshark
-* Traffic analysis
+* Infrastructure Monitoring
+* Metrics Collection
+* Dashboard Visualization
 
-### Scenario 2: SSH Brute Force Detection
+Components:
 
-* SSH configuration review
-* Hydra attack simulation
-* Authentication log analysis
-* Evidence collection
+* Grafana
+* Prometheus
+* Node Exporter
 
-### Scenario 3: Fail2Ban Detection & Automated Response
+Functions:
 
-* Fail2Ban deployment
-* SSH jail configuration
-* Attack detection
-* Automatic IP blocking
+* System Monitoring
+* Performance Analytics
+* Dashboard Visualization
+* Infrastructure Health Monitoring
+
+---
+
+## Data Flow
+
+```text
+Kali Linux
+(Attack Workstation)
+        │
+        ▼
+AWS Ubuntu Target Server
+(Nginx + OpenSSH + Fail2Ban)
+        │
+        ├── Authentication Events
+        ├── Security Events
+        └── System Metrics
+                │
+                ▼
+Monitoring Server
+(Prometheus + Node Exporter)
+                │
+                ▼
+Grafana Dashboard
+                │
+                ▼
+Security Monitoring & Visualization
+```
 
 ---
 
 ## Security Workflow
 
-1. Reconnaissance activity is initiated from Kali Linux.
-2. Network traffic is captured and analyzed using Wireshark.
-3. SSH brute-force attempts are generated using Hydra.
-4. Authentication failures are recorded on the target server.
-5. Fail2Ban detects repeated failures.
-6. The attacking IP address is automatically banned.
-7. Detection evidence is collected and documented.
+### Phase 1: Reconnaissance
+
+* Nmap scans target server
+* Open ports identified
+* Running services enumerated
+
+### Phase 2: Attack Simulation
+
+* Hydra generates SSH brute-force attempts
+* Authentication failures recorded
+* Security events generated
+
+### Phase 3: Threat Detection
+
+* Authentication logs analyzed
+* Failed login attempts identified
+* Security events documented
+
+### Phase 4: Automated Response
+
+* Fail2Ban detects repeated failures
+* Attacking IP address blocked
+* Incident response validated
+
+### Phase 5: Monitoring & Visualization
+
+* Node Exporter collects system metrics
+* Prometheus stores monitoring data
+* Grafana visualizes infrastructure health
+
+---
+
+## Key Capabilities
+
+* Cloud Infrastructure Deployment
+* Security Monitoring
+* Threat Detection
+* Attack Simulation
+* Authentication Log Analysis
+* Automated Incident Response
+* Dashboard-Based Monitoring
+* Infrastructure Visualization
 
 ---
 
 ## Future Enhancements
 
-* Wazuh SIEM Integration
-* Threat Detection Dashboard
-* Centralized Log Monitoring
+* Wazuh SIEM Deployment
+* Centralized Log Collection
 * Security Alert Correlation
-* SOC-Style Monitoring Environment
-
-## Architecture Goals
-
-* Demonstrate cloud security monitoring concepts
-* Simulate realistic attack scenarios
-* Validate detection capabilities
-* Implement automated incident response
-* Develop hands-on cybersecurity skills
-
+* Real-Time Alerting
+* Multi-Host Monitoring
+* SOC-Style Security Operations
