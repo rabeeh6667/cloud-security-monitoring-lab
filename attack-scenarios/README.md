@@ -1,140 +1,146 @@
 # Attack Scenarios
 
-## Overview
-
-This directory contains documented attack simulations performed as part of the Cloud Security Monitoring & Threat Detection Lab.
-
-The scenarios demonstrate the attack lifecycle from reconnaissance to threat detection and automated response within a controlled cloud-based environment.
-
-## Lab Environment
-
-### Attacker
-
-* Kali Linux
-
-### Target
-
-* AWS EC2 Ubuntu Server
-* Nginx Web Server
-* OpenSSH
-
-### Security Controls
-
-* Fail2Ban
-
-### Monitoring Sources
-
-* Authentication Logs
-* Nginx Access Logs
-* System Logs
+This document describes the attack simulations performed during the Cloud Security Monitoring & Threat Detection Lab and the corresponding detection and response activities.
 
 ---
 
 ## Scenario 1: Nmap Reconnaissance & Traffic Analysis
 
-**File:** `01-nmap-reconnaissance.md`
-
 ### Objective
 
-Identify exposed services and analyze network traffic generated during reconnaissance activities.
+Identify exposed services running on the target server and analyze network traffic generated during reconnaissance activities.
 
 ### Tools Used
 
+* Kali Linux
 * Nmap
 * Wireshark
 
-### Activities
+### Activities Performed
 
-* Port scanning
-* Service enumeration
-* Traffic capture
-* Packet analysis
+* Conducted TCP port scanning against the target server
+* Enumerated running services
+* Identified open network ports
+* Captured network traffic using Wireshark
+* Analyzed packet-level communication
 
-### Key Findings
+### Evidence Collected
 
-* SSH service identified
-* HTTP service identified
-* Network traffic successfully captured and analyzed
+* Nmap scan results
+* Service enumeration results
+* Packet capture analysis
+
+### Outcome
+
+Successfully identified exposed services and analyzed network traffic generated during reconnaissance operations.
 
 ---
 
 ## Scenario 2: SSH Brute Force Detection
 
-**File:** `02-ssh-bruteforce.md`
-
 ### Objective
 
-Simulate an SSH brute-force attack and analyze authentication logs.
+Simulate an SSH brute-force attack and identify authentication failures through system log analysis.
 
 ### Tools Used
 
+* Kali Linux
 * Hydra
 * OpenSSH
+* Ubuntu Server
 
-### Activities
+### Activities Performed
 
-* SSH login testing
-* Password attack simulation
-* Authentication log monitoring
+* Enabled password authentication for lab testing
+* Created a dedicated test account
+* Generated multiple SSH login attempts using Hydra
+* Monitored authentication logs
+* Identified failed login events
 
-### Key Findings
+### Evidence Collected
 
-* Failed login attempts detected
-* Authentication events recorded
-* Attack evidence collected
+* Hydra attack output
+* Authentication log entries
+* Failed login records
+
+### Outcome
+
+Successfully simulated an SSH brute-force attack and detected authentication failures through log analysis.
 
 ---
 
 ## Scenario 3: Fail2Ban Detection & Automated Response
 
-**File:** `03-fail2ban-response.md`
-
 ### Objective
 
-Demonstrate automated detection and blocking of SSH brute-force attacks.
+Validate automated threat detection and response capabilities using Fail2Ban.
 
 ### Tools Used
 
 * Fail2Ban
-* Hydra
+* OpenSSH
+* Ubuntu Server
 
-### Activities
+### Activities Performed
 
-* SSH jail configuration
-* Attack simulation
-* Detection monitoring
-* Automated IP blocking
+* Installed and configured Fail2Ban
+* Enabled SSH protection jail
+* Generated repeated failed login attempts
+* Monitored Fail2Ban activity
+* Verified automatic IP address blocking
 
-### Key Findings
+### Evidence Collected
 
-* Attack detected successfully
-* Authentication failures monitored
-* Attacking IP automatically blocked
+* Fail2Ban status output
+* Authentication failure logs
+* Banned IP address records
+
+### Outcome
+
+Successfully detected repeated authentication failures and automatically blocked the attacking IP address.
 
 ---
 
-## Security Workflow
+## Security Monitoring Dashboard
 
-1. Reconnaissance using Nmap
-2. Traffic analysis using Wireshark
-3. SSH brute-force simulation using Hydra
-4. Authentication log monitoring
-5. Threat detection using Fail2Ban
-6. Automated incident response
+### Objective
 
-## Lessons Learned
+Deploy a centralized monitoring platform to visualize infrastructure and security-related metrics.
 
-* Reconnaissance activities generate identifiable network traffic.
-* Authentication failures provide valuable detection indicators.
-* Log monitoring is essential for threat detection.
-* Automated response mechanisms reduce attack effectiveness.
-* Cloud-hosted systems require continuous monitoring and protection.
+### Tools Used
 
-## Future Enhancements
+* Grafana
+* Prometheus
+* Node Exporter
 
-* Wazuh SIEM Integration
-* Threat Detection Dashboard
-* Centralized Log Collection
-* Security Alert Correlation
-* Advanced Detection Rules
+### Activities Performed
 
+* Deployed dedicated monitoring server
+* Installed Grafana
+* Configured Prometheus monitoring
+* Collected system metrics using Node Exporter
+* Built monitoring dashboard
+
+### Evidence Collected
+
+* Grafana dashboard screenshots
+* Prometheus service status
+* Node Exporter metrics output
+
+### Outcome
+
+Successfully deployed a real-time monitoring dashboard capable of visualizing infrastructure performance and system health metrics.
+
+---
+
+## Summary
+
+The lab demonstrated the complete lifecycle of:
+
+1. Reconnaissance and service discovery
+2. SSH attack simulation
+3. Log-based threat detection
+4. Automated incident response
+5. Security monitoring and visualization
+
+These activities collectively simulate core Security Operations Center (SOC) functions within a cloud-based environment.
