@@ -240,6 +240,7 @@ aws/
 docs/
 screenshots/
 wazuh/
+grafana/
 README.md
 ```
 
