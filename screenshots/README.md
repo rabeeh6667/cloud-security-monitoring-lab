@@ -36,14 +36,17 @@ This directory contains evidence collected during the Cloud Security Monitoring 
 
 ## Security Monitoring Dashboard
 
-| Screenshot                           | Description                                                   |
-| ------------------------------------ | ------------------------------------------------------------- |
-| 13-monitoring-server-preparation.png | Dedicated monitoring server prepared for dashboard deployment |
-| 14-grafana-service-running.png       | Grafana service successfully installed and running            |
-| 15-grafana-login-screen.png          | Grafana web interface login page                              |
-| 16-grafana-home-dashboard.png        | Grafana dashboard successfully deployed and accessible        |
-| 17-loki-installation.png | Loki log aggregation service successfully installed |
-| 18-node-exporter-metrics.png | Node Exporter metrics endpoint successfully collecting system metrics |
+| Screenshot                           | Description                       |
+| ------------------------------------ | --------------------------------- |
+| 13-monitoring-server-running.png     | Monitoring server deployment      |
+| 14-grafana-service-running.png       | Grafana service running           |
+| 15-grafana-login-screen.png          | Grafana login page                |
+| 16-grafana-home-dashboard.png        | Grafana dashboard access          |
+| 17-monitoring-server-preparation.png | Monitoring server setup           |
+| 18-node-exporter-metrics.png         | Node Exporter metrics collection  |
+| 19-prometheus-running.png            | Prometheus service running        |
+| 20-prometheus-datasource.png         | Prometheus data source configured |
+| 21-security-monitoring-dashboard.png | Security monitoring dashboard     |
 
 ## Architecture
 
@@ -52,30 +55,3 @@ The project architecture diagram is located in:
 ```text
 architecture/cloud-security-lab-diagram.png
 ```
-
-## Upcoming Dashboard Evidence
-
-Planned screenshots for Version 2 completion:
-
-* SSH Failed Login Dashboard
-* Fail2Ban Events Dashboard
-* Nginx Access Monitoring Dashboard
-* Security Overview Dashboard
-* Loki Data Source Configuration
-* Centralized Log Monitoring Dashboard
-* Threat Detection Visualizations
-
-## Evidence Collection Purpose
-
-The screenshots in this directory provide visual evidence of:
-
-* Cloud infrastructure deployment
-* Network reconnaissance activities
-* Traffic analysis procedures
-* SSH attack simulation
-* Authentication log analysis
-* Automated threat detection
-* Incident response actions
-* Security monitoring dashboard deployment
-
-  | 17-loki-installation.png | Loki log aggregation service successfully installed |
