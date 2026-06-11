@@ -40,6 +40,12 @@ Version 2 extended the lab into a SOC-style monitoring environment using Grafana
 
 ![Architecture Diagram](architecture/cloud-security-lab-diagram.png)
 
+## Security Monitoring Dashboard
+
+The monitoring platform was built using Grafana, Prometheus, and Node Exporter to provide real-time visibility into infrastructure health and performance metrics.
+
+![Security Monitoring Dashboard](screenshots/21-security-monitoring-dashboard.png)
+
 ---
 
 ## Technologies Used
