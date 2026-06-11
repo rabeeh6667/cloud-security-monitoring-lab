@@ -1,152 +1,151 @@
-# AWS Infrastructure Documentation
+# AWS Deployment
 
 ## Overview
 
-This directory contains documentation related to the AWS cloud infrastructure used for the Cloud Security Monitoring & Threat Detection Lab.
+AWS EC2 was used to deploy and host the Cloud Security Monitoring & Threat Detection Lab environment.
 
-The AWS environment provides the target systems used for attack simulation, log generation, threat detection, and automated response testing.
-
-## Cloud Environment
-
-### Cloud Provider
-
-* Amazon Web Services (AWS)
-
-### Service Used
-
-* Amazon EC2
+The deployment consists of a target server used for attack simulation and a dedicated monitoring server used for infrastructure monitoring and dashboard visualization.
 
 ---
 
-## EC2 Instances
+## AWS Infrastructure
 
 ### Target Server
 
-**Purpose**
+Purpose:
 
-* Primary attack target
-* Service hosting
-* Log generation
+* Web Server Hosting
+* SSH Services
+* Security Testing Target
 
-**Operating System**
-
-* Ubuntu Server
-
-**Services Installed**
-
-* Nginx
-* OpenSSH
-* Fail2Ban
-
-**Security Features**
-
-* SSH access control
-* Authentication logging
-* Automated attack mitigation
-
----
-
-### Wazuh Server (Planned Enhancement)
-
-**Purpose**
-
-* Centralized security monitoring
-* Threat detection dashboard
-* Log aggregation
-
-**Operating System**
+Configuration:
 
 * Ubuntu Server
-
-**Planned Components**
-
-* Wazuh Manager
-* Wazuh Dashboard
-* Wazuh Indexer
-
----
-
-## Security Group Configuration
-
-### Inbound Rules
-
-| Port | Protocol | Purpose     |
-| ---- | -------- | ----------- |
-| 22   | TCP      | SSH Access  |
-| 80   | TCP      | HTTP Access |
-
-### Security Considerations
-
-* Restricted administrative access
-* Controlled exposure of services
-* Cloud-hosted attack simulation environment
-
----
-
-## Infrastructure Deployment Steps
-
-### 1. EC2 Instance Creation
-
-* Created Ubuntu Server instance
-* Configured networking
-* Assigned public IP address
-
-### 2. Service Deployment
-
-* Installed Nginx
-* Enabled OpenSSH
-* Configured Fail2Ban
-
-### 3. Security Testing
-
-* Nmap reconnaissance
-* SSH brute-force simulation
-* Traffic analysis
-* Automated response validation
-
----
-
-## Infrastructure Components
-
-### Web Service
-
 * Nginx Web Server
-* HTTP Service
-* Access Log Generation
-
-### Remote Access Service
-
 * OpenSSH
-* Secure Remote Administration
-* Authentication Monitoring
-
-### Security Controls
-
 * Fail2Ban
-* Automated IP Blocking
-* Brute Force Protection
+
+Functions:
+
+* Service Enumeration
+* Authentication Monitoring
+* Attack Simulation
+* Automated Threat Response
 
 ---
 
-## Monitoring Data Sources
+### Monitoring Server
 
-### Authentication Logs
+Purpose:
 
-```text
-/var/log/auth.log
+* Infrastructure Monitoring
+* Metrics Collection
+* Dashboard Visualization
+
+Configuration:
+
+* Ubuntu Server
+* Grafana
+* Prometheus
+* Node Exporter
+
+Functions:
+
+* System Monitoring
+* Performance Analytics
+* Dashboard Visualization
+* Infrastructure Health Monitoring
+
+---
+
+## AWS Services Used
+
+### Amazon EC2
+
+Used for:
+
+* Ubuntu Server Deployment
+* Monitoring Server Deployment
+* Security Testing Environment
+
+### Security Groups
+
+Configured for:
+
+* SSH Access (Port 22)
+* HTTP Access (Port 80)
+* Grafana Access (Port 3000)
+* Monitoring Services
+
+---
+
+## Deployment Process
+
+### Phase 1: Target Server Deployment
+
+* Created Ubuntu EC2 instance
+* Configured Security Groups
+* Connected using SSH
+* Updated system packages
+* Installed Nginx
+* Installed Fail2Ban
+
+### Phase 2: Security Testing Environment
+
+* Configured OpenSSH
+* Enabled lab authentication testing
+* Created dedicated test account
+* Performed attack simulations
+
+### Phase 3: Monitoring Platform Deployment
+
+* Created monitoring server
+* Installed Grafana
+* Installed Prometheus
+* Installed Node Exporter
+* Configured monitoring dashboard
+
+---
+
+## Security Configuration
+
+Implemented controls:
+
+* Security Group Rules
+* SSH Access Control
+* Fail2Ban Protection
+* Automated IP Blocking
+* Infrastructure Monitoring
+
+---
+
+## Architecture Summary
+
+```text id="0qyw0g"
+AWS EC2 Environment
+
+├── Target Server
+│   ├── Ubuntu Server
+│   ├── Nginx
+│   ├── OpenSSH
+│   └── Fail2Ban
+│
+└── Monitoring Server
+    ├── Grafana
+    ├── Prometheus
+    └── Node Exporter
 ```
 
-### Nginx Access Logs
+---
 
-```text
-/var/log/nginx/access.log
-```
+## Key Outcomes
 
-### Nginx Error Logs
-
-```text
-/var/log/nginx/error.log
-```
+* Successfully deployed cloud-based infrastructure
+* Configured security monitoring environment
+* Performed attack simulation activities
+* Implemented automated incident response
+* Built a centralized monitoring dashboard
+* Demonstrated cloud security operations concepts
 
 ---
 
@@ -154,14 +153,7 @@ The AWS environment provides the target systems used for attack simulation, log 
 
 * Wazuh SIEM Deployment
 * Centralized Log Collection
-* Threat Detection Dashboard
+* Multi-Host Monitoring
 * Security Alert Correlation
-* Advanced Monitoring Capabilities
-
-## Lessons Learned
-
-* Cloud infrastructure can be used to simulate realistic attack scenarios.
-* Proper security group configuration is critical for protecting cloud resources.
-* Log collection and monitoring are essential components of cloud security.
-* Automated response mechanisms improve security posture and reduce risk.
-
+* Real-Time Security Alerting
+* Expanded SOC Monitoring Environment
